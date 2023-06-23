@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Bank Application that creates read update and delete Accounts</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+<body>
+    <!-- create a header -->
+        <header>
+            <h2 class="logo">mimonie</h2>
+            <nav class="navigation">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+                <button class="btn-login-popup">Explore</button>
+            </nav>
+        </header>
+
+        <div class="wrapper">
+            <!-- registration form -->
+            <div class="form-box registration" id="registration">
+
+            <!-- <span class="icon-close"><ion-icon name="close-circle"></ion-icon></span> -->
+                <h2>Registration</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" name="username" id="username" required>
+                        <label for="username">Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock"></ion-icon></span>
+                        <input type="password" name="password" id="password" required>
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock"></ion-icon></span>
+                        <input type="password" name="con-password" id="con-password" required>
+                        <label for="con-password">Confirm Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label for="forgot"><input type="checkbox"><a> I agree to the terms and conditions</a></label>
+                       
+                    </div>
+                    <button class="btn" id="Next1">Next</button>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+<!-- perosnal information -->
+
+            <div class="form-box personal" id="personal">
+
+            <!-- <span class="icon-close"><ion-icon name="close-circle"></ion-icon></span> -->
+                <h2>Personal Information</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" name="fname" id="fname" required>
+                        <label for="fname">Firstname</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock"></ion-icon></span>
+                        <input type="text" name="mid-name" id="mid-name" required>
+                        <label for="mid-name">Middle name</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock"></ion-icon></span>
+                        <input type="lname" name="lname" id="lname" required>
+                        <label for="lname">Last Name</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label for="forgot"><input type="checkbox"><a> I agree to the terms and conditions</a></label>
+                       
+                    </div>
+                    <div class="btns">
+                    <button class="btn" id="Back1">Back</button>
+                    <button class="btn" id="Next2">Next</button>
+                    </div>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+
+
+            <!-- Financial Information -->
+
+               <div class="form-box fin-info" id="fin-info">
+
+               <!-- <span class="icon-close"><ion-icon name="close-circle"></ion-icon></span> -->
+                <h2>Financial  Information</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock"></ion-icon></span>
+                        <input type="number" name="phone-number" id="phone-number" required>
+                        <label for="phone-number">Phone Number (Linked to BVN)</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="number" name="BVN" id="BVN" required>
+                        <label for="BVN">Your BVN Number</label>
+                    </div>
+                    
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock"></ion-icon></span>
+                        <input type="lname" name="lname" id="lname" required>
+                        <label for="lname">Last Name</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label for="forgot"><input type="checkbox"><a> I agree to the terms and conditions</a></label>
+                       
+                    </div>
+                    <div class="btns">
+                    <button class="btn" id="Back2">Back</button>
+                    <button class="btn" id="Next3">Next</button>
+                    </div>     
+                           <div class="login-register">
+                           <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div> 
+            
+
+            
+<!-- login form -->
+<div class="form-box login"  id="login">
+
+<!-- <span class="icon-close"><ion-icon name="close-circle"></ion-icon></span> -->
+    <h2>Login</h2>
+    <form action="home.html">
+        <div class="input-box">
+            <span class="icon"><ion-icon name="close"></ion-icon></span>
+            <input type="email" name="email" id="email" required>
+            <label for="email">Email</label>
+        </div>
+        <div class="input-box">
+            <span class="icon"><ion-icon name="lock"></ion-icon></span>
+            <input type="password" name="email" id="password" required>
+            <label for="password">Password</label>
+        </div>
+        <div class="remember-forgot">
+            <label for="forgot"><input type="checkbox">Remember me</label>
+            <a href="#">Forgot Password</a>
+        </div>
+        <div class="btns">
+        <button class="btn" id="Back3">Back</button>
+        <button type="submit" class="btn" id="submit">Submit</button>
+        </div> 
+
+               <div class="login-register">
+            <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+        </div>
+    </form>
+</div>
+        </div>
+
+
+        <script>
+    var reg = document.getElementById('registration');
+    var login = document.getElementById("login");
+    var p_info = document.getElementById("personal");
+    var fin_info = document.getElementById('fin-info');
+    var Next1 = document.getElementById('Next1');
+    var Back1 = document.getElementById('Back1');
+    var Next2 = document.getElementById('Next2');
+    var Back2 = document.getElementById('Back2');
+    var Next3 = document.getElementById('Next3');
+    var Back3 = document.getElementById('Back3');
+    var submit = document.querySelector('.form-box.login #submit');
+
+    var register = document.querySelector('.login-register .register-link');
+    var login_link = document.querySelector('.login-register .login-link');
+
+    Next1.addEventListener('click', function(event) {
+        event.preventDefault();
+            reg.classList.add('slide-out');
+            p_info.classList.add('slide-in');
+            setTimeout(function() {
+                reg.style.display = 'none';
+                p_info.style.display = 'block';
+                reg.classList.remove('slide-out');
+            }, 500);
+        });
+
+        Next2.addEventListener('click', function() {event
+            event.preventDefault();
+            p_info.classList.add('slide-out');
+            fin_info.classList.add('slide-in');
+            setTimeout(function() {
+                p_info.style.display = 'none';
+                fin_info.style.display = 'block';
+                p_info.classList.remove('slide-out');
+            }, 500);
+        });
+
+        Next3.addEventListener('click', function() {event
+            event.preventDefault();
+            fin_info.classList.add('slide-out');
+            login.classList.add('slide-in');
+            setTimeout(function() {
+                fin_info.style.display = 'none';
+                login.style.display = 'block';
+                fin_info.classList.remove('slide-out');
+            }, 500);
+        });
+
+        Back1.addEventListener('click', function() {event
+            event.preventDefault();
+            p_info.classList.add('slide-out');
+            reg.classList.add('slide-in');
+            setTimeout(function() {
+                p_info.style.display = 'none';
+                reg.style.display = 'block';
+                p_info.classList.remove('slide-out');
+            }, 500);
+        });
+
+        Back2.addEventListener('click', function() {event
+            event.preventDefault();
+            fin_info.classList.add('slide-out');
+            p_info.classList.add('slide-in');
+            setTimeout(function() {
+                fin_info.style.display = 'none';
+                p_info.style.display = 'block';
+                fin_info.classList.remove('slide-out');
+            }, 500);
+        });
+
+        Back3.addEventListener('click', function() {event
+            event.preventDefault();
+            login.classList.add('slide-out');
+            fin_info.classList.add('slide-in');
+            setTimeout(function() {
+                login.style.display = 'none';
+                fin_info.style.display = 'block';
+                login.classList.remove('slide-out');
+            }, 500);
+        });
+        register.addEventListener('click', function(event){
+            event.preventDefault();
+            login.classList.add('slide-out');
+            reg.classList.add('slide-in');
+            setTimeout(function() {
+                login.style.display = 'none';
+                reg.style.display="block";
+                login.classList.remove('slide-out');
+            }, 500);
+        });
+        login_link.addEventListener('click', function(event){
+            event.preventDefault();
+            reg.classList.add('slide-out')
+            p_info.classList.add('slide-out')
+            fin_info.classList.add('slide-out')
+            login.classList.add('slide-in');
+            setTimeout(function(){
+                login.style.display="block";
+                reg.style.display="none";
+                p_info.style.display="none";
+                fin_info.style.display="none";
+                
+            }, 500);
+        })
+        submit.addEventListener('click', function() {
+            event.preventDefault(); // Prevent the default form submission behavior
+
+    // Perform form submission or other necessary actions
+
+    // Redirect to the desired URL
+    window.location.href = 'home.html';
+        });
+
+</script>
+
+
+</body>
+</html>
