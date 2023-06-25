@@ -1,6 +1,6 @@
 up# skillsforge
 bank app
-copy thus link to view this as a website "luxury-cobbler-384342"
+copy thus link to view this as a website "luxury-cobbler-384342.netlify.app"
 fill the form completely until you reach the login form and click submit,
 it will redirect you to the bank dashboard.
 this dashboard was not completed (@skillsforge)
